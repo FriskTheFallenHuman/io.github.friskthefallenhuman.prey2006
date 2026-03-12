@@ -1,0 +1,11 @@
+[Desktop Entry]
+Comment=Sci-fi horror FPS source port
+Categories=Game;ActionGame;Shooter;
+Exec=prey06
+Icon=io.github.friskthefallenhuman.prey2006
+Name=Prey (2006)
+GenericName=First-Person Shooter
+StartupNotify=true
+Terminal=false
+Type=Application
+Keywords=prey;first;person;shooter;alien;portals;singleplayer;multiplayer;
