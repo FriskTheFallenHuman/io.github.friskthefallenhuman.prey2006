@@ -4,6 +4,8 @@ name: Lint Flatpak metadata
 on:
   workflow_dispatch:
   push:
+    tags:
+      - 'v*'
     paths:
       - "*.metainfo.xml"
   pull_request:
