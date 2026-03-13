@@ -5,10 +5,14 @@ on:
   workflow_dispatch:
   push:
     tags:
-      - 'v*'
+      - "v*"
     paths:
       - "*.metainfo.xml"
   pull_request:
+
+concurrency:
+  group: flatpak-linter-${{ github.ref }}
+  cancel-in-progress: true
 
 jobs:
   metainfo-lint:

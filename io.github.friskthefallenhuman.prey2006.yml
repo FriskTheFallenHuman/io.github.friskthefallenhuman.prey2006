@@ -56,8 +56,8 @@ modules:
       - type: file
         path: prey2006.sh
     post-install:
-      - install -Dm 644 icons/128x128/apps/io.github.friskthefallenhuman.prey2006.png -t /app/share/icons/hicolor/128x128/apps/
-      - install -Dm 644 icons/256x256/apps/io.github.friskthefallenhuman.prey2006.png -t /app/share/icons/hicolor/256x256/apps/
-      - install -Dm 644 icons/scalable/apps/io.github.friskthefallenhuman.prey2006.svg -t /app/share/icons/hicolor/scalable/apps/
+      - install -Dm 644 icons/128x128/io.github.friskthefallenhuman.prey2006.png -t /app/share/icons/hicolor/128x128/apps/
+      - install -Dm 644 icons/256x256/io.github.friskthefallenhuman.prey2006.png -t /app/share/icons/hicolor/256x256/apps/
+      - install -Dm 644 icons/scalable/io.github.friskthefallenhuman.prey2006.svg -t /app/share/icons/hicolor/scalable/apps/
       - install -Dm 755 ${FLATPAK_BUILDER_BUILDDIR}/prey2006.sh -t /app/bin/
       - mv /app/share/games/prey06/base/base.so /app/bin/ && rm -rf /app/share/games
